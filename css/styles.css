@@ -71,11 +71,14 @@ main {
     height: 140px;
     background-image: url(../assets/images/bg-pattern-card.svg);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; 
+    position: relative;  
 }
 
 .card-header img {
     border-radius: 50%;
     position: absolute;
-    bottom: 50%;
+    border: 5px solid white;
+    left: calc(50% - 53px);
+    bottom: -53px;
 }
