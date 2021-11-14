@@ -16,6 +16,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol {
 html, body {
     height: 100%;
     font-family: 'Kumbh Sans', sans-serif;
+    color: var(--dark-blue);
     background-color: var(--dark-cyan);
 }
 
@@ -26,16 +27,13 @@ body {
     /* background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg); */
 }
 
-input, button, textarea, select {
-    font: inherit;
-}
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
+    font-size: 18px;
 }
 
 /* .bg {
@@ -81,4 +79,52 @@ main {
     border: 5px solid white;
     left: calc(50% - 53px);
     bottom: -53px;
+}
+
+.personal-information {
+    height: 145px;
+    border-bottom: 1px solid #E7E7E7;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.number {
+    font-weight: 700;
+}
+
+.age {
+    color: var(--dark-gray-blue);
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.location {
+    font-size: 14px;
+    padding-bottom: 26px;
+    color: var(--dark-gray-blue);
+}
+
+.card-stats {
+    height: 87px;
+    padding: 0 50px;
+    margin: auto 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.desc {
+    color: var(--dark-gray-blue);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.stats {
+    width: 60px;
 }
