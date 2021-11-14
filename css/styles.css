@@ -79,6 +79,7 @@ main {
     border: 5px solid white;
     left: calc(50% - 53px);
     bottom: -53px;
+    background-color: #fff;
 }
 
 .personal-information {
