@@ -24,10 +24,13 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
-    /* background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg); */
+    background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 50vw top 50vh;
 }
 
 main {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,25 +38,6 @@ main {
     height: 100%;
     font-size: 18px;
 }
-
-/* .bg {
-    height: 978px;
-    width: 978px;
-    background-repeat: no-repeat;
-    position: absolute;
-}
-
-.bg-top {
-    background-image: url(../assets/images/bg-pattern-top.svg);
-    left: -298px;
-    top: -608px;
-}
-
-.bg-bottom {
-    background-image: url(../assets/images/bg-pattern-bottom.svg);
-    bottom: -633px;
-    right: -253px;
-} */
 
 .card {
     height: 374px;
