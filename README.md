@@ -31,7 +31,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/profile-card-component-built-using-html-and-css-qyBog7xmQ](https://www.frontendmentor.io/solutions/profile-card-component-built-using-html-and-css-qyBog7xmQ)
 - Live Site URL: [https://lmac-1.github.io/profile-card-component/](https://lmac-1.github.io/profile-card-component/)
 
 ## My process
