@@ -1,114 +1,131 @@
 :root {
-    --dark-cyan: hsl(185, 75%, 39%);
-    --dark-blue: hsl(229, 23%, 23%);
-    --dark-gray-blue: hsl(227, 10%, 46%);
-    --dark-gray: hsl(0, 0%, 59%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol {
-    margin: 0;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Kumbh Sans', sans-serif;
-    color: var(--dark-blue);
-    background-color: var(--dark-cyan);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-    background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+  line-height: 1.5;
+  font-size: 18px;
+  background-color: var(--dark-cyan);
+  color: var(--dark-blue);
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 0 20px;
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    font-size: 18px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background circles */
+.c1 {
+  right: 50%;
+  bottom: 43%;
+}
+
+.c2 {
+  top: 50%;
+  left: 50%;
+}
+
+.c1,
+.c2 {
+  position: fixed;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 0.6);
+  z-index: -1;
 }
 
 .card {
-    height: 374px;
-    width: 350px;
-    background-color: #ffffff;
-    z-index: 100;
-    border-radius: 15px;
-    /* So that the header background image doesn't go over border radius */
-    overflow: hidden;
+  width: 100%;
+  max-width: 375px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 40px 1px #0000002c;
+
+  /* So that the header background image doesn't go over border radius */
+  overflow: hidden;
 }
 
 .card-header {
-    height: 140px;
-    background-image: url(../assets/images/bg-pattern-card.svg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    position: relative;  
+  height: 140px;
+  background-image: url(../assets/images/bg-pattern-card.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .card-header img {
-    border-radius: 50%;
-    position: absolute;
-    border: 5px solid white;
-    left: calc(50% - 53px);
-    bottom: -53px;
-    background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  border: 5px solid white;
+  left: calc(50% - 53px);
+  bottom: -53px;
+  background-color: #fff;
 }
 
 .personal-information {
-    height: 145px;
-    border-bottom: 1px solid #E7E7E7;
-    padding-top: 70px;
-    text-align: center;
+  /* padding: 100px; */
+  margin-top: 80px;
+  text-align: center;
 }
 
 .name {
-    font-weight: 700;
-    padding-bottom: 5px;
+  font-weight: 700;
+  padding-bottom: 5px;
 }
 
 .number {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .age {
-    color: var(--dark-gray-blue);
-    font-weight: 400;
-    padding-left: 10px;
+  color: var(--dark-gray-blue);
+  font-weight: 400;
+  margin-left: 10px;
 }
 
 .location {
-    font-size: 14px;
-    padding-bottom: 26px;
-    color: var(--dark-gray-blue);
+  font-size: 14px;
+  color: var(--dark-gray-blue);
 }
 
 .card-stats {
-    height: 87px;
-    padding: 0 50px;
-    margin: auto 0;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    text-align: center;
+  border-top: 1px solid #e7e7e7;
+  margin-top: 30px;
+  padding: 20px 35px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-.desc {
-    color: var(--dark-gray-blue);
-    font-size: 10px;
-    letter-spacing: 1px;
+.card-stats li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.stats {
-    width: 60px;
+.card-stats li :first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-stats li :nth-child(2) {
+  color: var(--dark-gray);
+  margin-top: 5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
 }
