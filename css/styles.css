@@ -7,10 +7,8 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol {
     margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -27,20 +25,21 @@ body {
     background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+    padding: 0 16px;
 }
 
 main {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100%;
     font-size: 18px;
 }
 
 .card {
     height: 374px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     background-color: #ffffff;
     z-index: 100;
     border-radius: 15px;
@@ -56,12 +55,14 @@ main {
     position: relative;  
 }
 
+
 .card-header img {
     border-radius: 50%;
     position: absolute;
     border: 5px solid white;
-    left: calc(50% - 53px);
-    bottom: -53px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
     background-color: #fff;
 }
 
@@ -75,6 +76,7 @@ main {
 .name {
     font-weight: 700;
     padding-bottom: 5px;
+    font-size: 1.125rem;
 }
 
 .number {
@@ -103,7 +105,11 @@ main {
     text-align: center;
 }
 
-.desc {
+.card-stats dd {
+    font-weight: 700;
+}
+
+.card-stats dt {
     color: var(--dark-gray-blue);
     font-size: 10px;
     letter-spacing: 1px;
