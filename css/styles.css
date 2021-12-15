@@ -45,6 +45,14 @@ main {
     border-radius: 15px;
     /* So that the header background image doesn't go over border radius */
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-header {
@@ -67,9 +75,9 @@ main {
 }
 
 .personal-information {
-    height: 145px;
     border-bottom: 1px solid #E7E7E7;
     padding-top: 70px;
+    padding-bottom: 21px;
     text-align: center;
 }
 
@@ -91,15 +99,13 @@ main {
 
 .location {
     font-size: 14px;
-    padding-bottom: 26px;
     color: var(--dark-gray-blue);
 }
 
 .card-stats {
-    height: 87px;
-    padding: 0 50px;
+    padding: 0 25px;
     margin: auto 0;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     text-align: center;
