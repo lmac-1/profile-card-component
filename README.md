@@ -4,8 +4,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Table of contents
 
-- [Frontend Mentor - Profile card component solution](#frontend-mentor---profile-card-component-solution-in-progress)
-  - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
